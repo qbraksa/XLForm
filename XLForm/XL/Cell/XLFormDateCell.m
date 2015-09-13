@@ -49,6 +49,7 @@
         [self setModeToDatePicker:self.datePicker];
         return self.datePicker;
     }
+    self.datePicker.timeZone = [NSTimeZone timeZoneWithName:@"America/Montreal"];
     return [super inputView];
 }
 
